@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Browse our categories</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* لضبط المحاذاة الرأسية */
+            flex-wrap: nowrap; /* لإبقاء العناصر في صف واحد */
+            gap: 20px; /* لتحديد المسافة بين البطاقات */
+            margin-top: 100px;
+        }
+
+        .hand-creem, .mokasher, .diodrant {
+            width: 325px;
+            background-color: #9132c4;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hand-creem img, .mokasher img, .diodrant img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 10px;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #ffffff;
+            color: #9132c4;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .header{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            align-items: center;
+            padding-top: 70px;
+        }
+        .header button{
+            height: 70px;
+            width: 180px;
+            background-color:#9132c4 ;
+            color: aliceblue;
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            border-radius: 35px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="section" id="categories">
+        <div class="header"> 
+            <h1> Browse our categories</h1>
+            <button>Shop now</button>
+
+        </div>
+
+    </div>
+    <div class="card-container">
+        <div class="hand-creem">
+            <img src="handcream.jpg" alt="Hand Cream">
+            <div class="card-content">
+                <h3>المرطبات</h3>
+                <p>19 items</p> 
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="mokasher">
+            <img src="mokasher.jpg" alt="Mokasher">
+            <div class="card-content">
+                <h3>المقشرات</h3>
+                <p>40 items</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="diodrant">
+            <img src="diodrent.jpg" alt="Diodrant">
+            <div class="card-content">
+                <h3>الديودرنت</h3>
+                <p>17 items</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
